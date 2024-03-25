@@ -9,14 +9,11 @@ let index = 0;
 let insertArray = (arr, c, position) => {
 
     let lengtharr1 = arr.length;
-    console.log('length', lengtharr1);
 
     for (let i = lengtharr1; i > position; i--) {
         arr[i] = arr[i - 1];
-        console.log('arr inside loop', arr);
 
     }
-    console.log('arr', arr);
     arr[position] = c;
     return arr;
 
